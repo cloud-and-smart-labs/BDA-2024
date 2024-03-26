@@ -9,7 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -119,14 +119,21 @@
           </a>
         </li>
 
-        <li class="nav-item nav-list">
-          <a class="nav-link nav-link-tag" href="committee.html" style="color: white!Important">Committees 
-            <!-- <span class="sr-only">(current)</span> -->
+        <li class="nav-item nav-list dropdown">
+          <a class="nav-link nav-link-tag dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style="color: white!Important">
+            Committees
           </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"
+            style=" background-color: maroon!Important; ">
+            <a class="dropdown-item" href="organizing_committee.html" style="color: white!Important">Organizing committee</a>
+            <a class="dropdown-item" href="steering_committee.html" style="color: white!Important">Steering committee</a>
+            <a class="dropdown-item" href="program_committee.html" style="color: white!Important">Program committee</a>
+          </div>
         </li>
 
         <li class="nav-item nav-list">
-          <a class="nav-link nav-link-tag" href="#" style="color: white!Important">Speakers</a>
+          <a class="nav-link nav-link-tag" href="speakers.html" style="color: white!Important">Speakers</a>
         </li>
         <!-- <li class="nav-item nav-list">
           <a class="nav-link nav-link-tag" href="#" style="color: white!Important">Accepted Papers</a>
@@ -138,7 +145,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"
             style=" background-color: maroon!Important; ">
-            <a class="dropdown-item" href="#" style="color: white!Important">Call For Research Papers</a>
+            <a class="dropdown-item" href="cfp.html" style="color: white!Important">Call For Research Papers</a>
             <a class="dropdown-item" href="#" style="color: white!Important">Call For Tutorials</a>
             <a class="dropdown-item" href="#" style="color: white!Important">Call For Workshops</a>
           </div>
@@ -150,13 +157,13 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"
             style="background-color: maroon!Important; ">
-            <a class="dropdown-item" target="_blank" href="#" style="color: white!Important">Call For
+            <a class="dropdown-item" target="_blank" href="" style="color: white!Important">Call For
               Participation - PDF</a>
             <a class="dropdown-item" target="_blank" href="#" style="color: white!Important">Call For
               Participation - TXT</a>
-            <a class="dropdown-item" target="_blank" href="#"
+            <a class="dropdown-item" target="_blank" href="Docs/BDA2024_cfp.pdf"
               style="color: white!Important">Call For Papers - PDF</a>
-            <a class="dropdown-item" target="_blank" href="#"
+            <a class="dropdown-item" target="_blank" href="Docs/BDA2024_cfp.txt"
               style="color: white!Important">Call For Papers - TXT</a>
 
             <!-- <a class="dropdown-item" href="committee.html#Organizing-Committee" style="color: white!Important">Organizing Committee</a> -->
@@ -178,7 +185,7 @@
           <a class="nav-link nav-link-tag" href="#" style="color: white!Important">Participation</a>
         </li>
         <li class="nav-item nav-list">
-          <a class="nav-link nav-link-tag" href="#" style="color: white!Important">Venue
+          <a class="nav-link nav-link-tag" href="venue.html" style="color: white!Important">Venue
             <!-- <span class="sr-only">(current)</span></a> -->
           </a>
         </li>

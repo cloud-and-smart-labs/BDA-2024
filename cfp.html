@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> BDA 2024 - UOH </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+      width: 100%;
+
+    }
+
+    .dropdown-item:hover {
+      background-color: maroon;
+    }
+
+    @media only screen and (max-width: 849px) {
+
+      .para {
+        font: 11px !important;
+      }
+
+      .carousel-caption {
+        padding-top: 10px !important;
+        padding-bottom: 0px !important;
+      }
+
+      .carousel-image {
+        height: 100%px;
+        width: 100%;
+      }
+
+      .header-text {
+        font-size: 13px;
+        text-shadow: 2.2px 2.2px 5px black;
+      }
+
+      .header-main {
+        font-size: 15px;
+        text-shadow: 2.2px 2.2px 5px black;
+      }
+    }
+
+    @media only screen and (min-width: 850px) {
+
+      .para {
+        font: 11px !important;
+      }
+
+      .carousel-caption {
+        padding-top: 10px !important;
+        padding-bottom: 0px !important;
+      }
+
+      .carousel-image {
+        height: 100%;
+        width: 100%;
+      }
+
+      .header-text {
+        font-size: 25px;
+        text-shadow: 4px 4px 5px black;
+      }
+
+      .header-main {
+        font-size: 30px;
+        text-shadow: 4px 4px 5px black;
+      }
+    }
+
+    .side-container {
+      position: absolute;
+      right: 10%;
+      left: 60%;
+    }
+
+    .bide-container {
+      position: absolute;
+      right: 45%;
+      left: 8%;
+    }
+
+    .abide-container {
+      right: 45%;
+      left: 8%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <img src="logopsd_blue.png" > -->
+  <nav class="navbar navbar-expand-md navbar-tag">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </button>
+    <!-- <div style="margin-left:30px;">
+      <img src="images/IoE-Combine-Logo.jpg" style="height:12vh; width:12vh;"/>
+    </div> -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav container unordered-list">
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="index.html" style="color: white!Important"> 
+             <span class="sr-only">(current)</span>
+          </a>
+        </li> -->
+        <li class="nav-item nav-list">
+          <a class="nav-link nav-link-tag" href="index.html" style="color: white!Important">Home 
+            <!-- <span class="sr-only">(current)</span> -->
+          </a>
+        </li>
+
+        <li class="nav-item nav-list dropdown">
+          <a class="nav-link nav-link-tag dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style="color: white!Important">
+            Committees
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"
+            style=" background-color: maroon!Important; ">
+            <a class="dropdown-item" href="organizing_committee.html" style="color: white!Important">Organizing committee</a>
+            <a class="dropdown-item" href="steering_committee.html" style="color: white!Important">Steering committee</a>
+            <a class="dropdown-item" href="program_committee.html" style="color: white!Important">Program committee</a>
+          </div>
+        </li>
+
+        <li class="nav-item nav-list">
+          <a class="nav-link nav-link-tag" href="speakers.html" style="color: white!Important">Speakers</a>
+        </li>
+        <!-- <li class="nav-item nav-list">
+          <a class="nav-link nav-link-tag" href="#" style="color: white!Important">Accepted Papers</a>
+        </li> -->
+        <li class="nav-item nav-list dropdown">
+          <a class="nav-link nav-link-tag dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style="color: white!Important">
+            Calls For
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"
+            style=" background-color: maroon!Important; ">
+            <a class="dropdown-item" href="cfp.html" style="color: white!Important">Call For Research Papers</a>
+            <a class="dropdown-item" href="#" style="color: white!Important">Call For Tutorials</a>
+            <a class="dropdown-item" href="#" style="color: white!Important">Call For Workshops</a>
+          </div>
+        </li>
+        <li class="nav-item nav-list dropdown">
+          <a class="nav-link nav-link-tag dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style="color: white!Important">
+            Downloads
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"
+            style="background-color: maroon!Important; ">
+            <a class="dropdown-item" target="_blank" href="#" style="color: white!Important">Call For
+              Participation - PDF</a>
+            <a class="dropdown-item" target="_blank" href="#" style="color: white!Important">Call For
+              Participation - TXT</a>
+            <a class="dropdown-item" target="_blank" href="Docs/BDA2024_cfp.pdf"
+              style="color: white!Important">Call For Papers - PDF</a>
+            <a class="dropdown-item" target="_blank" href="Docs/BDA2024_cfp.txt"
+              style="color: white!Important">Call For Papers - TXT</a>
+
+            <!-- <a class="dropdown-item" href="committee.html#Organizing-Committee" style="color: white!Important">Organizing Committee</a> -->
+          </div>
+        </li>
+        <li class="nav-item nav-list">
+          <a class="nav-link nav-link-tag" href="#" style="color: white!Important">Important Dates</a>
+        </li>
+        <li class="nav-item nav-list">
+          <a class="nav-link nav-link-tag" href="#" style="color: white!Important">Program Schedule</a>
+        </li>
+        <li class="nav-item nav-list">
+          <a class="nav-link nav-link-tag" href="#" style="color: white!Important">Workshops</a>
+        </li>
+        <li class="nav-item nav-list">
+          <a class="nav-link nav-link-tag" href="#" style="color: white!Important">Registrations</a>
+        </li>
+        <li class="nav-item nav-list">
+          <a class="nav-link nav-link-tag" href="#" style="color: white!Important">Participation</a>
+        </li>
+        <li class="nav-item nav-list">
+          <a class="nav-link nav-link-tag" href="venue.html" style="color: white!Important">Venue
+            <!-- <span class="sr-only">(current)</span></a> -->
+          </a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="index.html" style="color: white!Important"> 
+            <span class="sr-only">(current)</span>
+          </a>
+        </li> -->
+      </ul>
+    </div>
+  </nav>
+
+  
+  <div class="container">
+
+    <h1>BDA 2024: Call for Papers and Proposals</h1>
+
+<p>Twelfth International Conference on Big Data and Artificial Intelligence</p>
+
+<p>December 17-20, 2024 (BDA2024)</p>
+
+<p>The University of Hyderabad, India</p>
+
+<p><a href="https://scis.uohyd.ac.in/~bda2024">https://scis.uohyd.ac.in/~bda2024</a></p>
+
+<!-- <p style="color:red;">Extended paper submission deadline: August 5, 2024</p> -->
+<p>The 12th International Conference on Big Data Analytics and Artificial Intelligence (BDA 2024) will be held during December 17-20, 2024. The conference will be organized by the University of Hyderabad (UoH), India. BDA 2024 provides an international forum for researchers and industry practitioners to share their original research results, practical experiences and thoughts on big data from different perspectives including artificial intelligence, machine learning, storage models, data access, computing paradigms, analytics, information sharing and privacy, redesigning mining algorithms, open issues and future research trends. </p>
+<p>BDA 2024 invites original, technically sound, original, high-quality research papers proposing novel solutions addressing the problems related to big data analytics as well as case studies and practical experiences with big data. Major topics of interest to the conference include, but are not limited to: </p>
+<br>
+
+<strong><p>Big Data Systems and Data Science</p></strong>
+
+<ul>
+  <li>Data Integration</li>
+  <li>Data pre-processing</li>
+  <li>NoSQL and non-standard Data Models</li>
+  <li>Data Fusion and Multi Modal Analytics </li>
+  <li>Sensor data management, Statistical and scientific databases </li>
+  <li>Index Structures, Scalability and Performance</li>
+  <li>Data Mining (Association rule, classification, clustering, pattern mining, query analysis, anomaly and outlier detection)</li>
+  <li>Spatio-temporal, time-series, sequential,  stream and sensor data mining</li>
+  <li>Model Discovery from Big Data </li>
+  <li>Big Data Processing </li>
+  <li>Distributed and Cloud Computing</li>
+  <li>Conceptual/cognitive/programming Models for Big data analytics,</li>
+  <li>Information Retrieval and Extraction  </li>
+  <li>Semantic web and knowledge management </li>
+  <li>Graph and social network analysis </li>
+  <li>Information search </li>
+  <li>Human-in-the-loop computation and crowdsourcing</li>
+  <li>User interface design </li>
+  <li>Recommendation systems </li>
+  <li>Data visualization </li>
+  <li>Graph mining </li>
+  <li>Privacy, security, trust and fairness in big data</li>
+  <li>Semantics of Big Data, Processing of Big Data </li>
+</ul>
+
+<strong><p>Artificial Intelligence</p></strong>
+
+<ul>
+  <li>Machine Learning and AI techniques for big data</li>
+  <li>Conversational AI (e.g., chatbots and voice assistants)</li>
+  <li>Large Language Models and vision transformers</li>
+  <li>Deep Learning </li>
+  <li>Prompt Engineering</li>
+  <li>Reinforcement learning </li>
+  <li>Generative AI</li>
+  <li>Quantum ML </li>
+  <li>Decision-focussed learning</li>
+  <li>Neuro-symbolic methods and reasoning</li>
+  <li>Non-IID learning, and OOD generalization</li>
+  <li>Edge analytics and federated learning</li>
+</ul>
+
+<strong><p>Technology and Practice</p></strong>
+
+<ul>
+  <li>Innovative Data science and AI applications in agriculture, medical, drug discovery, environment, climate change. E-governance and so on.</li>
+  <li>AI technologies for trend detection, analysis and tracing on contact networks</li>
+  <li>Domain-specific Analytics</li>
+  <li>Interaction Design for Exploratory Analytics</li>
+  <li>AI technologies for trend detection, analysis and tracing on contact networks</li>
+  <li>Innovative search and recommendation applications </li>
+  <li>Database usability and HCI  </li>
+  <li>Advanced database and Web applications </li>
+  <li>Bio and health informatics</li>
+</ul>
+
+<strong><p>Research Track Submissions:</p></strong>
+
+<p>Each paper should contain an abstract of approximately 250 words with a page limit of 20 pages in the LNCS style. The submissions include the title page, references and appendix. For preparing the manuscript, please see instructions for authors by Springer in the Lecture Notes in Computer Science series (LNCS). The BDA proceedings is expected to be published by Springer's LNCS series (approval pending). </p>
+<br>
+<strong><p>Important Dates: (All deadlines are in Anywhere on Earth)</p></strong>
+
+<p>Full paper submissions: 30-June-2024</p>
+
+<p>Research paper notifications: 15-September-2024</p>
+
+<p>Camera-ready submission: 15-October-2024</p>
+
+<p>Workshops and Tutorials: The BDA 2024 organizing committee invites proposals for half day and full - day workshops and tutorials on established and emerging topics in the areas of Big Data Analytics and other related areas. Information for submission of each type of proposal is provided on the conference website. Visit <a href="https://scis.uohyd.ac.in/~bda2024">https://scis.uohyd.ac.in/~bda2024</a> for the details of call for WORKSHOP and TUTORIAL proposals. </p><br>
+<strong><h3>Organization</h3></strong>
+
+<strong><p>Patrons:</p></strong>
+
+<ul>
+  <li>Basuthkar Jagadeeshwar Rao, Vice Chancellor, University of Hyderabad, India</li>
+  <li>P J Narayanan, Director, International Institute of Information Technology, Hyderabad (IIIT-H), India</li>
+</ul>
+
+<strong><p>Honorary Chairs:</p></strong>
+<ul>
+  <li>Atul Negi, Dean, School of Computer and Information Sciences, UoH, India</li>
+  <li>Vadlamani Ravi, IDRBT, Hyderabad, India</li>
+</ul>
+
+<strong><p>General Chair:</p></strong>
+<ul>
+  <li>Satish Narayana Srirama, University of Hyderabad, India</li>
+</ul>
+
+<strong><p>Steering Committee Liaison:</p></strong>
+<ul>
+  <li>P Krishna Reddy, International Institute of Information Technology, Hyderabad, India</li>
+</ul>
+
+<strong><p>Program Committee Chairs:</p></strong>
+<ul>
+  <li>Anirban Dasgupta, Indian Institute of Technology, Gandhinagar, India</li>
+  <li>Rage Uday Kiran, University of Aizu, Fukushima, Japan</li>
+  <li>Radwa El Shawi, Institute of Computer Science, University of Tartu, Estonia</li>
+</ul>
+
+<strong><p>Workshop Chairs:</p></strong>
+<ul>
+  <li>Chinmaya Kumar Dehury, University of Tartu, Estonia</li>
+  <li>Saurabh Shukla, IIIT Lucknow, India</li>
+  <li>Prasan Kumar Sahoo, Chang Gung University, Taiwan</li>
+</ul>
+
+<strong><p>Tutorial Chairs:</p></strong>
+<ul>
+  <li>Jimson Mathew, Indian Institute of Technology, Patna, India</li>
+  <li>Abhishek Hazra, IIIT-Sri City, Andhra Pradesh, India</li>
+</ul>
+
+<strong><p>Publication Chair:</p></strong>
+<ul>
+  <li>Mainak Adhikari, IISER Thiruvananthapuram, India</li>
+</ul>
+
+<strong><p>Industry Track Chairs:</p></strong>
+<ul>
+  <li>Tathagata Chakrabarty, Senior Consultant, TCS, Lucknow, India </li>
+</ul>
+
+<strong><p>Sponsorship Chair:</p></strong>
+<ul>
+  <li>Bhupathi Shanti, Senior Consultant, TCS, Hyderabad, India</li>
+</ul>
+
+<strong><p>Panel Chairs:</p></strong>
+<ul>
+  <li>Chakravarthy Bhagvati, University of Hyderabad, India</li>
+  <li>J V R Sagar, DRDO, India</li>
+</ul>
+
+<strong><p>Diversity & Inclusion Chair:</p></strong>
+<ul>
+  <li>P S V S Sai Prasad, University of Hyderabad, India</li>
+</ul>
+
+<strong><p>Publicity Chair:</p></strong>
+<ul>
+  <li>Praveen Kumar Donta, TU Wien, Vienna, Austria</li>
+  <li>G. Geethakumari, BITS Pilani, Hyderabad Campus, India</li>
+  <li>Tilottama Goswami, Vasavi College of Engineering, Hyderabad, India</li>
+</ul>
+
+<strong><p>Organizing Committee:</p></strong>
+<ul>
+  <li>Salman Abdul Moiz, UoH</li>
+  <li>Y V Subba Rao, UoH</li>
+  <li>Anjeneya Swami Kare, UoH</li>
+  <li>Rahul Mishra, IIIT Hyderabad</li>
+  <li>Srinivasa Rao Battula, UoH</li>
+  <li>S Durga Bhavani, UoH</li>
+  <li>N Rukma Rekha, UoH</li>
+  <li>Avatharam Ganivada, UoH</li>
+</ul>
+
+<strong><p>Student Chair:</p></strong>
+<ul>
+  <li>Aditya Kumar, Research Scholar – UoH, India</li>
+</ul>
+
+<strong><p>Web Chair:</p></strong>
+<ul>
+  <li>Rahul Siyanwal, Research Scholar – UoH, India</li>
+</ul>
+
+<br>
+<h3>BDA 2024 Secretariat</h3>
+
+<p>Satish Narayana Srirama (University of Hyderabad, India)</p>
+
+<p>E-mail: <a href="mailto:bda2024.uoh@gmail.com">bda2024.uoh@gmail.com</a></p>
+
+<p>Website: <a href="https://scis.uohyd.ac.in/~bda2024">https://scis.uohyd.ac.in/~bda2024</a></p>
+
+
+
+  </div>
+
+
+</body>
+
+</html>

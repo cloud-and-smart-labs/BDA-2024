@@ -1,0 +1,133 @@
+BDA2024: Call for Papers and Proposals 
+Twelfth International Conference on Big Data and Artificial Intelligence 
+December 17-20, 2024 (BDA2024) 
+The University of Hyderabad, India 
+https://scis.uohyd.ac.in/~bda2024  
+ 
+The 12th International Conference on Big Data Analytics and Artificial Intelligence (BDA 2024) will be held during December 17-20, 2024. The conference will be organized by the University of Hyderabad (UoH), India. BDA 2024 provides an international forum for researchers and industry practitioners to share their original research results, practical experiences and thoughts on big data from different perspectives including artificial intelligence, machine learning, storage models, data access, computing paradigms, analytics, information sharing and privacy, redesigning mining algorithms, open issues and future research trends. 
+ 
+BDA 2024 invites original, technically sound, original, high-quality research papers proposing novel solutions addressing the problems related to big data analytics as well as case studies and practical experiences with big data. Major topics of interest to the conference include, but are not limited to: 
+ 
+Big Data Systems and Data Science  
+
+  	•	Data Integration 
+	•	Data pre-processing 
+	•	NoSQL and non-standard Data Models   
+	•	Data Fusion and Multi Modal Analytics 
+	•	Sensor data management, Statistical and scientific databases 
+	•	Index Structures, Scalability and Performance    
+	•	Data Mining (Association rule, classification, clustering, pattern mining, query analysis, anomaly and outlier detection)  
+	•	Spatio-temporal, time-series, sequential,  stream and sensor data mining   
+	•	Model Discovery from Big Data 
+	•	Big Data Processing 
+	•	Distributed and Cloud Computing  
+	•	Conceptual/cognitive/programming Models for Big data analytics,  
+	•	Information Retrieval and Extraction  
+	•	Semantic web and knowledge management 
+	•	Graph and social network analysis 
+	•	Information search 
+	•	Human-in-the-loop computation and crowdsourcing   
+	•	User interface design 
+	•	Recommendation systems 
+	•	Data visualization 
+	•	Graph mining 
+	•	Privacy, security, trust and fairness in big data  
+	•	Semantics of Big Data, Processing of Big Data 
+ 
+Artificial Intelligence  
+	•	Machine Learning and AI techniques for big data  
+	•	Conversational AI (e.g., chatbots and voice assistants)  
+	•	Large Language Models and vision transformers  
+	•	Deep Learning 
+	•	Prompt Engineering  
+	•	Reinforcement learning 
+	•	Generative AI  
+	•	Quantum ML 
+	•	Decision-focussed learning  
+	•	Neuro-symbolic methods and reasoning,  
+	•	Non-IID learning, and OOD generalization  
+	•	Edge analytics and federated learning  
+ 
+Technology and Practice  
+	•	Innovative Data science and AI applications in agriculture, medical, drug discovery, environment, climate change. E-governance and so on. 
+	•	AI technologies for trend detection, analysis and tracing on contact networks 
+	•	Domain-specific Analytics 
+	•	Interaction Design for Exploratory Analytics 
+	•	AI technologies for trend detection, analysis and tracing on contact networks 
+	•	Innovative search and recommendation applications 
+	•	 Database usability and HCI  
+	•	Advanced database and Web applications 
+	•	Bio and health informatics  
+ 
+Research Track Submissions: 
+Each paper should contain an abstract of approximately 250 words with a page limit of 20 pages in the LNCS style. The submissions include the title page, references and appendix. For preparing the manuscript, please see instructions for authors by Springer in the Lecture Notes in Computer Science series (LNCS). The BDA proceedings is expected to be published by Springer's LNCS series (approval pending). 
+ 
+Important Dates: (All deadlines are in Anywhere on Earth) 
+ 
+Full paper submissions: 30-June-2024 
+Research paper notifications: 15-September-2024 
+Camera-ready submission:  15-October-2024 
+ 
+Workshops and Tutorials: The BDA 2024 organizing committee invites proposals for half day and full - day workshops and tutorials on established and emerging topics in the areas of Big Data Analytics and other related areas. Information for submission of each type of proposal is provided on the conference website. Visit https://scis.uohyd.ac.in/~bda2024   for the details of call for WORKSHOP and TUTORIAL proposals. 
+ 
+Organization 
+Patrons: 
+Basuthkar Jagadeeshwar Rao, Vice Chancellor, University of Hyderabad, India 
+P J Narayanan, Director, International Institute of Information Technology, 	
+
+	
+
+Hyderabad (IIIT-H), India 
+Honorary Chairs:  
+Atul Negi, Dean, School of Computer and Information Sciences, UoH, India 
+Vadlamani Ravi, IDRBT, Hyderabad, India 
+General Chair: 
+Satish Narayana Srirama, University of Hyderabad, India 
+Steering Committee Liaison:  
+P Krishna Reddy, International Institute of Information Technology, Hyderabad, India  
+Program Committee Chairs: 
+Anirban Dasgupta, Indian Institute of Technology, Gandhinagar, India 
+Rage Uday Kiran, University of Aizu, Fukushima, Japan 
+Radwa El Shawi, Institute of Computer Science, University of Tartu, Estonia 
+Workshop Chairs:  
+Chinmaya Kumar Dehury, University of Tartu, Estonia 
+Saurabh Shukla, IIIT Lucknow, India 
+Prasan Kumar Sahoo, Chang Gung University, Taiwan 
+Tutorial Chairs: 
+Jimson Mathew, Indian Institute of Technology, Patna, India 
+Abhishek Hazra, IIIT-Sri City, Andhra Pradesh, India 
+Publication Chair:  
+Mainak Adhikari, IISER Thiruvananthapuram, India 
+Industry Track Chairs: 
+Tathagata Chakrabarty, Senior Consultant, TCS, Lucknow, India 
+Sponsorship Chair:  
+Bhupathi Shanti, Senior Consultant, TCS, Hyderabad, India 
+Panel Chairs: 
+Chakravarthy Bhagvati, University of Hyderabad, India 
+J V R Sagar, DRDO, India 
+Diversity & Inclusion Chair: 
+P S V S Sai Prasad, University of Hyderabad, India 
+Publicity Chair:  
+Praveen Kumar Donta, TU Wien, Vienna, Austria 
+G. Geethakumari, BITS Pilani, Hyderabad Campus, India 
+Tilottama Goswami, Vasavi College of Engineering, Hyderabad, India 
+Local Organizing Committee: 
+Salman Abdul Moiz, UoH 
+Y V Subba Rao, UoH 
+Anjeneya Swami Kare, UoH 
+Rahul Mishra, IIIT Hyderabad 
+Srinivasa Rao Battula, UoH 
+S Durga Bhavani, UoH 
+N Rukma Rekha, UoH 
+Avatharam Ganivada, UoH 
+Student Chair: 
+Aditya Kumar, Research Scholar – UoH, India 
+Web Chair: 
+Rahul Siyanwal, Research Scholar – UoH, India 
+ 
+ 
+BDA2024 Secretariat 
+Satish Narayana Srirama (University of Hyderabad, India) 
+E-mail: bda2024.uoh@gmail.com 
+Website: https://scis.uohyd.ac.in/~bda2024 
+************************************************************ 
