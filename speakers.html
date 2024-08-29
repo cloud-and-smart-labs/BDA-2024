@@ -95,6 +95,47 @@
       right: 45%;
       left: 8%;
     }
+    /* Style for the expandable menu container */
+    .expandable-menu {
+            background-color: #f1f1f1;
+            border-radius: 8px;
+            margin: 10px 0;
+            overflow: hidden;
+        }
+
+        /* Menu heading (clickable) */
+        .expandable-heading {
+            padding: 15px;
+            background-color: #7181d9;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Symbol on the right side */
+        .expandable-heading .symbol {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* The content inside the expandable menu */
+        .expandable-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            /* background-color: white; */
+            padding: 0 15px;
+        }
+
+        /* The content when expanded */
+        .expandable-menu.active .expandable-content {
+            max-height: 500px; /* Adjust this value based on your content */
+            padding: 15px;
+        }
   </style>
 </head>
 
@@ -200,7 +241,7 @@
 
 <section class="page__content" itemprop="text">
 
-    <h2>Speakers  at BDA 2024 </h2>
+    <h2>Keynote Speakers</h2>
     <div itemscope="" itemtype="https://schema.org/Person" style="width: 100%; display: table;">
       <div style="display: table-row;">
           <div class="author__avatar" style="display: table-cell; padding-bottom: 5px;">
@@ -208,22 +249,125 @@
           </div>
           <div class="author__content" style="display: table-cell; padding-left: 15px;">
             <h3 class="author__name" itemprop="name">
-              <a href="http://www.buyya.com/">Rajkumar Buyya</a>
-              
+              <a href="http://www.buyya.com/">Rajkumar Buyya</a> 
             </h3>
-            <p class="author__bio" itemprop="description">Director of Melbourne Clouds Lab<br> Distinguished professor University of Melbourne, Australia</p>
-            <p class="author__bio" itemprop="description"></p>
+            <p class="author__bio" itemprop="description">Director, Cloud Computing and Distributed Systems (CLOUDS) Lab, The University of Melbourne, Australia <br>CEO, Manjrasoft Pvt Ltd, Melbourne, Australia</p>
+            <!-- <p class="author__bio" itemprop="description">CEO, Manjrasoft Pvt Ltd, Melbourne, Australia</p> -->
+            <div class="expandable-menu" onclick="toggleMenu(this)">
+              <div class="expandable-heading">
+                  <span>Title: Neoteric Frontiers in Cloud, Edge, and Quantum Computing</span>
+                  <span class="symbol">+</span>
+              </div>
+              <div class="expandable-content">
+                <p class="author__bio" itemprop="description" style="font-size:15px" align="justify"> <b> ABSTRACT </b><br><br>
+                  Computing is being transformed to a model consisting of services that are delivered in a manner similar to utilities such as water, electricity, gas, and telephony. In such a model, users access services based on their requirements without regard to where the services are hosted or how they are delivered. Cloud computing paradigm has turned this vision of "computing utilities" into a reality. It offers infrastructure, platform, and software as services, which are made available to consumers as subscription-oriented services. Cloud application platforms need to offer (1) APIs and tools for rapid creation of elastic applications and (2) a runtime system for deployment of applications on geographically distributed Data Centre infrastructures (with Quantum computing nodes) in a seamless manner.
+                  <br><br>
+                  The Internet of Things (IoT) paradigm enables seamless integration of cyber-and-physical worlds and opening opportunities for creating new class of applications for domains such as smart cities, smart robotics, and smart healthcare. The emerging Fog/Edge computing paradigms support latency sensitive/real-time IoT applications with a seamless integration of network-wide resources all the way from edge to the Cloud.
+                  <br><br>
+                  This keynote presentation will cover (a) 21st century vision of computing and identifies various IT paradigms promising to deliver the vision of computing utilities; (b) innovative architecture 
+                  for creating elastic Clouds integrating edge resources and managed Clouds, (c) Aneka 5G, a Cloud Application Platform, for rapid development of Cloud/Big Data/AI applications and their deployment on private/public Clouds with resource provisioning driven by SLAs, (d) a novel FogBus software framework with Blockchain-based data-integrity management for facilitating end-to-end IoT-Fog/Edge-Cloud integration for execution of sensitive IoT applications, (e) experimental results on deploying Cloud and Big Data/ IoT applications in engineering, and health care (e.g., COVID-19), deep learning/Artificial intelligence (AI), satellite image processing, and natural language processing (mining COVID-19 research for new insights) on elastic Clouds, (f) QFaaS: A Serverless Function-as-a-Service Framework for Quantum Computing, and (g) directions for delivering our 21st century vision along with new directions for future research in Cloud, Edge, and Quantum computing.
+                </p>
+              </div>
+            </div>
+            <div class="expandable-menu" onclick="toggleMenu(this)">
+              <div class="expandable-heading">
+                  <span>Bio</span>
+                  <span class="symbol">+</span>
+              </div>
+              <div class="expandable-content">
+                <p class="author__bio" itemprop="description" style="font-size:15px" align="justify">
+                  Dr. Rajkumar Buyya is a Redmond Barry Distinguished Professor and Director of the Cloud Computing and Distributed Systems (CLOUDS) Laboratory at the University of Melbourne, Australia. He is also serving as the founding CEO of Manjrasoft, a spin-off company of the University, commercializing its innovations in Cloud Computing. He has authored over 
+                  850 publications and seven textbooks including "Mastering Cloud Computing" published by McGraw Hill, China Machine Press, and Morgan Kaufmann for Indian, Chinese and international markets respectively. Dr. Buyya is one of the highly cited authors in computer science and software engineering worldwide (h-index=167 g-index=365, and 148,500+ citations). He has been recognised as a "Web of Science Highly Cited Researcher" for seven times since 2016, "Best of the World" twice for research fields (in Computing Systems in 2019 and Software Systems in 2021/2022/2023) as well as "Lifetime Achiever" and "Superstar of Research" in "Engineering and Computer Science" discipline twice (2019 and 2021) by the Australian Research Review.
+                  <br><br>
+                  Software technologies for Grid, Cloud, and Fog computing developed under Dr.Buyya's leadership have gained rapid acceptance and are in use at several academic institutions and commercial enterprises in 50+ countries around the world. Manjrasoft's Aneka Cloud technology developed under his leadership has received "Frost New Product Innovation Award". He served as founding Editor-in-Chief of the IEEE Transactions on Cloud Computing. He is currently serving as Editor-in-Chief of Software: Practice and Experience, a long-standing journal in the field established 50+ years ago. He has presented over 700 invited talks (keynotes, tutorials, and seminars) on his vision on IT Futures, Advanced Computing technologies, and Spiritual Science at international conferences and institutions in Asia, Australia, Europe, North America, and South America. He has recently been recognized as a Fellow of the Academy of Europe. For further information on Dr.Buyya, please visit his cyberhome: <a href="http://www.buyya.com/" style="color: blue;">www.buyya.com</a> 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div itemscope="" itemtype="https://schema.org/Person" style="width: 100%; display: table;">
+      <div style="display: table-row;">
+          <div class="author__avatar" style="display: table-cell; padding-bottom: 5px;">
+            <img src="images/speakers/GiulianoCasale.jpeg" alt="Giuliano Casale" itemprop="image" />
+          </div>
+          <div class="author__content" style="display: table-cell; padding-left: 15px;">
+            <h3 class="author__name" itemprop="name">
+              <a href="https://wp.doc.ic.ac.uk/gcasale/">Giuliano Casale</a> 
+            </h3>
+            <p class="author__bio" itemprop="description">Imperial College London</p>
+            <div class="expandable-menu" onclick="toggleMenu(this)">
+              <div class="expandable-heading">
+                  <span>Title: </span>
+                  <span class="symbol">+</span>
+              </div>
+              <div class="expandable-content">
+                <p class="author__bio" itemprop="description" style="font-size:15px" align="justify"> <b> ABSTRACT </b><br><br>
+                
+                </p>
+              </div>
+            </div>
+            <div class="expandable-menu" onclick="toggleMenu(this)">
+              <div class="expandable-heading">
+                  <span>Bio</span>
+                  <span class="symbol">+</span>
+              </div>
+              <div class="expandable-content">
+                <p class="author__bio" itemprop="description" style="font-size:15px" align="justify">
+                  Giuliano Casale is a Reader in the Department of Computing at Imperial College London. He does research in Quality-of-Service engineering and cloud computing, topics on which he has published more than 150 refereed papers. He has served as program co-chair for several conferences in the area of performance and reliability engineering, such as ACM SIGMETRICS/Performance and IEEE/IFIP DSN. His research work has received best paper awards at ACM SIGMETRICS, IEEE/IFIP DSN and IEEE INFOCOM. During 2019-2023, he has served as ACM SIGMETRICS chair. He serves on the editorial board of ACM TOMPECS and as the Editor-in-Chief of Elsevier Performance Evaluation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <h2>Invited Speakers</h2>
+    <div itemscope="" itemtype="https://schema.org/Person" style="width: 100%; display: table;">
+      <div style="display: table-row;">
+          <div class="author__avatar" style="display: table-cell; padding-bottom: 5px;">
+            <img src="images/speakers/AsokeTalukder.jpeg" alt="Asoke Talukder" itemprop="image" />
+          </div>
+          <div class="author__content" style="display: table-cell; padding-left: 15px;">
+            <h3 class="author__name" itemprop="name">
+              <a href="https://in.linkedin.com/in/asoketalukder">Asoke Talukder</a> 
+            </h3>
+            <p class="author__bio" itemprop="description">Co-Founder & CSO <br>ARAI Solutions, Bangalore</p>
+            <!-- Expandable Menu -->
+            <div class="expandable-menu" onclick="toggleMenu(this)">
+              <div class="expandable-heading">
+                  <span>Bio</span>
+                  <span class="symbol">+</span>
+              </div>
+              <div class="expandable-content">
+                <p class="author__bio" itemprop="description" style="font-size:15px" align="justify">
+                  Dr Asoke K Talukder is a polymath. He is a Physicist by training, Computer Scientist by choice, and Biomedical Scientist by passion. He did M.Sc (Physics) and Ph.D (Computer Science); his current domain is Medical AI, Health Analytics, and Predictive Medicine. He worked in domains of innovation for companies like ICL, Fujitsu-ICIM, Microsoft, Oracle, Informix, Digital, Hewlett Packard, Sequoia, Northern Telecom, NEC, KredietBank, iGate, Cellnext, Tyfone etc. Dr Asoke authored/edited six books; out of which two are translated in Chinese; he published about 70+ research papers. He is recipient of many international awards including All India Radio/Doordarshan Award, ICL Services Trophy, ICIM Professional Excellence Award, ICL Chief Executive Excellence Award, Atlas Club Excellence Award, and Govt of Karnatake Bio-Excellence Awards. His products were recipient of IBM Solutions Excellence Award, and Simagine GSMWorld Award. He Internet enabled Microsoft PowerPoint. He engineered the FIRST 64-bit Database with Asynchronous IO in the World for Informix & Digital. He engineered the First Realtime Reality TV Show Kaun Banega Crorepati (Who Wants to be a Millionaire) hosted by Amitabh Bachchan. He developed the first Blockchain Consensus protocol "Proof of Disease" for healthcare. He engineered the ZERO Defect Network Management Controller for Queen's Award winning PDMX. He setup the first X.25 network in India for Department of Telecommunications (DoT), and the first Java Competency Centre in India. Dr Asoke has been listed in "Who’s Who in Science and Engineering", "Who’s Who in the World" and "Outstanding Scientists of 21st Century". 
+                  <br><br>
+                  In previous avatars Dr Asoke co-founded Cellnext that shaped the Mobile Web in India. He co-founded InterpretOmics, a leading Systems Biology and Genomics Big-data company. He co-founded Precision Genomics Limited, a company using AI (Artificial Intelligence) for AI (Actionable Insights) in Medicine. In Medical AI he is integrating Unstructured Clinical & Genomics Big-data with Unstructured Medical and Phenomics (SNOMED/Clinical/Medical/Lab/Radiology etc) Big-data to ensure "better health and better outcome at better price". This solution will increase the productivity of a hospital/clinic and reduce the disease burden.
+                </p>
+              </div>
+            </div>
           </div>
       </div>
-</div>
+    </div>
+    
+    
+    <script>
+      function toggleMenu(element) {
+          element.classList.toggle("active");
 
-<p><b>More speakers will be added soon</b></p>
+          // Toggle between + and - symbols
+          const symbol = element.querySelector(".symbol");
+          symbol.textContent = element.classList.contains("active") ? "-" : "+";
+      }
+    </script>
 
 
+<br><br>
 
-    </section>
+</section>
 </article>
-
 </body>
 
 </html>
