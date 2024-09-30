@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> BDA 2024 - UOH </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <link rel="stylesheet" type="text/css" media="all" href="CSS/committee.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+      width: 100%;
+
+    }
+
+    .dropdown-item:hover {
+      background-color: maroon;
+    }
+
+    @media only screen and (max-width: 849px) {
+
+      .para {
+        font: 11px !important;
+      }
+
+      .carousel-caption {
+        padding-top: 10px !important;
+        padding-bottom: 0px !important;
+      }
+
+      .carousel-image {
+        height: 100%px;
+        width: 100%;
+      }
+
+      .header-text {
+        font-size: 13px;
+        text-shadow: 2.2px 2.2px 5px black;
+      }
+
+      .header-main {
+        font-size: 15px;
+        text-shadow: 2.2px 2.2px 5px black;
+      }
+    }
+
+    @media only screen and (min-width: 850px) {
+
+      .para {
+        font: 11px !important;
+      }
+
+      .carousel-caption {
+        padding-top: 10px !important;
+        padding-bottom: 0px !important;
+      }
+
+      .carousel-image {
+        height: 100%;
+        width: 100%;
+      }
+
+      .header-text {
+        font-size: 25px;
+        text-shadow: 4px 4px 5px black;
+      }
+
+      .header-main {
+        font-size: 30px;
+        text-shadow: 4px 4px 5px black;
+      }
+    }
+
+    .side-container {
+      position: absolute;
+      right: 10%;
+      left: 60%;
+    }
+
+    .bide-container {
+      position: absolute;
+      right: 45%;
+      left: 8%;
+    }
+
+    .abide-container {
+      right: 45%;
+      left: 8%;
+    }
+    table {
+            width: 100%;
+            border-collapse: collapse; /* Ensure no extra borders */
+        }
+        th, td {
+            border: 1px solid black; /* Internal borders only */
+            padding: 10px;
+            text-align: left;
+            font-size: 12px;
+        }
+        th {
+            background-color: #f2f2f2; /* Light grey for header background */
+        }
+  </style>
+</head>
+
+<body>
+  <!-- <img src="logopsd_blue.png" > -->
+  <nav class="navbar navbar-expand-md navbar-tag">
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+      <i class="fa fa-bars" aria-hidden="false"></i>
+    </button> -->
+    <!-- <div class="collapse navbar-collapse" id="navbarNav"> -->
+      <div class="" id="navbarNav"></div>
+      <ul class="navbar-nav container unordered-list">
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="index.html" style="color: white!Important"> 
+             <span class="sr-only">(current)</span>
+          </a>
+        </li> -->
+        <li class="nav-item nav-list">
+          <a class="nav-link nav-link-tag" href="index.html" style="color: white!Important">Home 
+            <!-- <span class="sr-only">(current)</span> -->
+          </a>
+        </li>
+
+        <li class="nav-item nav-list dropdown">
+          <a class="nav-link nav-link-tag dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style="color: white!Important">
+            Committees
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"
+            style=" background-color: maroon!Important; ">
+            <a class="dropdown-item" href="organizing_committee.html" style="color: white!Important">Organizing committee</a>
+            <a class="dropdown-item" href="steering_committee.html" style="color: white!Important">Steering committee</a>
+            <a class="dropdown-item" href="program_committee.html" style="color: white!Important">Program committee</a>
+          </div>
+        </li>
+
+        <li class="nav-item nav-list">
+          <a class="nav-link nav-link-tag" href="speakers.html" style="color: white!Important">Speakers</a>
+        </li>
+        <!-- <li class="nav-item nav-list">
+          <a class="nav-link nav-link-tag" href="#" style="color: white!Important">Accepted Papers</a>
+        </li> -->
+        <li class="nav-item nav-list dropdown">
+          <a class="nav-link nav-link-tag dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style="color: white!Important">
+            Calls For
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"
+            style=" background-color: maroon!Important; ">
+            <a class="dropdown-item" href="cfp.html" style="color: white!Important">Call For Research Papers</a>
+            <a class="dropdown-item" href="cft.html" style="color: white!Important">Call For Tutorials</a>
+            <a class="dropdown-item" href="cfw.html" style="color: white!Important">Call For Workshops</a>
+          </div>
+        </li>
+        
+        <li class="nav-item nav-list dropdown">
+          <a class="nav-link nav-link-tag dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style="color: white!Important">
+            For Authors
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"
+            style=" background-color: maroon!Important; ">
+            <a class="dropdown-item" href="paper_submission.html" style="color: white!Important">Paper Submission</a>
+            <a class="dropdown-item" href="important_dates.html" style="color: white!Important">Important Dates</a>
+            <a class="dropdown-item" href="camera_ready.html" style="color: white!Important">Camera-Ready instructions</a>
+          </div>
+        </li>
+        <li class="nav-item nav-list dropdown">
+            <a class="nav-link nav-link-tag dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" style="color: white!Important">
+              Program Schedule
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"
+              style=" background-color: maroon!Important; ">
+              <a class="dropdown-item" href="conference_schedule.html" style="color: white!Important">Conference Schedule</a>
+              <a class="dropdown-item" href="accepted_papers.html" style="color: white!Important">Accepted Papers</a>
+            </div>
+          </li>
+        <li class="nav-item nav-list">
+          <a class="nav-link nav-link-tag" href="workshops.html" style="color: white!Important">Workshops</a>
+        </li>
+        <li class="nav-item nav-list">
+          <a class="nav-link nav-link-tag" href="registration.html" style="color: white!Important">Registrations</a>
+        </li>
+        <li class="nav-item nav-list">
+          <a class="nav-link nav-link-tag" href="participation.html" style="color: white!Important">Participation</a>
+        </li>
+        <li class="nav-item nav-list">
+          <a class="nav-link nav-link-tag" href="venue.html" style="color: white!Important">Venue
+            <!-- <span class="sr-only">(current)</span></a> -->
+          </a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="index.html" style="color: white!Important"> 
+            <span class="sr-only">(current)</span>
+          </a>
+        </li> -->
+      </ul>
+    </div>
+  </nav>
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Accepted Papers">
+    <meta itemprop="description" content="Accepted Papers">
+    <div class="page__inner-wrap">
+        <header>
+          <!-- <h1 id="page-title" class="page__title" itemprop="headline">Accepted Papers -->
+          </h1>
+        </header>
+
+<section class="page__content" itemprop="text">
+
+    <h2>Full Papers</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Paper ID</th>
+                <th>Title</th>
+                <th>Authors</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>11</td>
+                <td>Efficient Detection of Acute Lymphoblastic Leukemia in Microscopic Blood Cell Images</td>
+                <td>Bhupathi Vishva Pavani <i>(Amrita Vishwa Vidyapeetham)</i>; Thanmai Gaddam <i>(Amrita Vishwa Vidyapeetham)</i>; Rimjhim Dr. Singh <i>(Amrita vishwa vidyapeetham)*</i></td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>MLN-geeWhiz: Supporting Complex Data Analysis Including Visualization</td>
+                <td>Amey Shinde <i>(The University of Texas at Arlington)</i>; Viraj Sabhaya <i>(The University of Texas at Arlington)</i>; Kevin Farokhrouz <i>(The University of Texas at Arlington)</i>; Fariba Irany <i>(University of North Texas)</i>; Ali Khan <i>( University of North Texas)</i>; Sanjukta Bhowmick <i>(University of North Texas)</i>; Abhishek Santra <i>(The Department of Computer Science and Engineering, University of Texas at Arlington )*</i>; Sharma Chakravarthy <i>(University of Texas at Arlington)</i></td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>DisEvD: A Benchmark Dataset for Disruptive Event Identification from Online Social Network</td>
+                <td>Jitendra Parmar <i>(VIT University )*</i>; Aditi Seetha <i>(MNIT)</i>; Satyendra singh chouhan <i>(MNIT Jaipur)</i>; Emmanuel Shubhakar Pilli <i>(MNIT Jaipur)</i>; Abhinav Jain <i>(IIIT KOTA)</i></td>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td>Dynamic Deployment of Serverless Data Pipeline on Fog Nodes</td>
+                <td>Sreenivasu Mirampalli <i>(University of Hyderabad)</i>; Rajeev Wankar <i>(University of Hyderabad)</i>; Satish N Srirama <i>(University of Hyderabad)*</i></td>
+            </tr>
+            <tr>
+                <td>49</td>
+                <td>Explainable Detection and Analysis of Cauliflower Leaf Diseases</td>
+                <td>Sharia Arfin Tanim <i>(American International University-Bangladesh(AIUB))</i>; Rubaba Binte  Rahman <i>(American International University-Bangladesh)</i>; Kazi  Tanvir <i>(Vellore Institute of Technology)</i>; Md. Sayem Kabir <i>(American International University-Bangladesh)</i>; Tasnim Sultana Sintheia <i>(American International University-Bangladesh)</i>; Md Saef Ullah Miah <i>(AIUB)*</i></td>
+            </tr>
+            <tr>
+                <td>50</td>
+                <td>gCDR: A group aided cross-domain recommendation framework</td>
+                <td>Adamya Shyam <i>(University of Delhi)</i>; Kavita  Kanwar <i>(National Institute of Technology, Warangal)</i>; Vikas Kumar <i>(University of Delhi)*</i>; Venkateswara R Kagita <i>(NIT Warangal)</i></td>
+            </tr>
+            <tr>
+                <td>51</td>
+                <td>Matrix factorization of large scale data using block based approach and GPU acceleration</td>
+                <td>Prasad Bhavana <i>(University of Hyderabad)*</i>; Vineet Padmanabhan <i>(University of Hyderabad)</i>; Wilson Naik Bhukya <i>(University of Hyderabad)</i></td>
+            </tr>
+            <tr>
+                <td>58</td>
+                <td>Neutrosophic Clustering Method with Local Spatial Information for Dermoscopic Image Segmentation</td>
+                <td>Avni Mishra <i>(Jawaharlal Nehru University)*</i>; Ramesh Kumar Agrawal <i>(JAWAHARLAL NEHRU UNIVERSITY)</i>; Pinki Kumari <i>(Jawaharlal Nehru University)</i></td>
+            </tr>
+            <tr>
+                <td>89</td>
+                <td>Adaptive Temporal Random Walks for Graph Representation</td>
+                <td>Monachary Kammari <i>(University of Hyderabad)*</i>; Durga Bhavani S <i>(University of Hyderabad)</i></td>
+            </tr>
+            <tr>
+                <td>93</td>
+                <td>MARINE: A Computer Vision Model for Detecting Rare Predator-Prey Interactions in Animal Videos </td>
+                <td>Zsófia  Katona <i>(University of Amsterdam)</i>; Seyed Sahand Mohammadi Ziabari <i>(University of Amsterdam)*</i>; Fatemeh  Karimi Najadasl <i>(University of Amsterdam)</i></td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>CKELM: Unified Approach to Parking Space Classification for All Weather Types</td>
+                <td>Navpreet <i>(Thapar institute of engineering and technology)*</i>; Rajendra  Kumar Roul <i>(Thapar Institute of Engineering and Technology)</i>; Dr. Rinkle Rani <i>(Thapar University)</i></td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>SDG HHAG Framework: Homogeneous and Heterogeneous Attributed Graphs</td>
+                <td>Sandhya Rani A <i>(University of Hyderabad)*</i>; Ashwitha G <i>(University of Hyderabad)</i>; Swarupa K Rani <i>(University of Hyderabad)</i></td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>GCN-MLP Framework for EEG-Based Vigilance Estimation for Variable Data Length</td>
+                <td>Ravi Tiwari <i>(Mahindra University)</i>; Shabnam Samima <i>(Mahindra University)*</i>; Tauheed Ahmed <i>(Mahindra University)</i></td>
+            </tr>
+            <tr>
+                <td>106</td>
+                <td>Advanced HLS for Reconfigurable Image Processing in Big Data Systems</td>
+                <td>Bhagirath K <i>(CDAC Noida)*</i>; Dheeraj Pant <i>(CDAC Noida)</i>; Abhishek Tiwari <i>(CDAC Noida)</i>; Vivek Khaneja <i>(CDAC Noida)</i></td>
+            </tr>
+            <tr>
+                <td>111</td>
+                <td>DLMLP with elastic-net regularization for hyperspectral image classification</td>
+                <td>Madhuri  Gadwal  <i>(University of Hyderabad )*</i>; Atul Negi <i>(University of Hyderabad)</i></td>
+            </tr>
+            <tr>
+                <td>112</td>
+                <td>A Fusion Strategy for Classifying Student Involvement in Education Systems</td>
+                <td>Kudratdeep Aulakh <i>(Thapar Institute of Engineering and Technology, Patiala, Punjab)*</i>; Rajendra  Kumar Roul <i>(Thapar Institute of Engineering and Technology)</i>; Manisha Kaushal <i>(Thapar Institute of Engineering and Technology, Patiala, Punjab)</i></td>
+            </tr>
+            <tr>
+                <td>121</td>
+                <td>A Novel Multi-Task Learning Framework for  Predicting Traffic Congestion</td>
+                <td>Charan Marrimanu Teja <i>(Madanapalle Institute of Technology and Science)*</i></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Short Papers</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Paper ID</th>
+                <th>Title</th>
+                <th>Authors</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>5</td>
+                <td>Blockchain-Based Model for Industrial Product Traceability and Regulation</td>
+                <td>Qiang He <i>(Northeastern University)*</i></td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Evaluating Deep Learning Embedding Techniques for Code Smell Detection</td>
+                <td>Praveen Singh Thakur <i>(Malaviya National Institute of Technology Jaipur)*</i>; Mahipal Jadeja <i>(Malaviya National Institute of Technology Jaipur)</i>; Satyendra singh chouhan <i>(MNIT Jaipur); Santosh Singh Rathore (ABV-IIITM Gwalior)</i></td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>Deep Learning Framework for Early Diagnosis of COPD and Respiratory Diseases using Lung Sound Analysis</td>
+                <td>Purnanand Prasad <i>(Silicon University)</i>; Prakash Sahu <i>(International Institute Of Information Technology, Naya Raipur)</i>; Vishnu Prasad Verma <i>(IIIT Naya Raipur)*<i>; Santosh Kumar <i>(Dr.S P Mukherjee International Institute of Information Technology)</i></td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>An Efficient Predictive Big Data Analytics for Supply Chain Demand Forecasting through Ensemble Learning </td>
+                <td>Navadersh S <i>(Indian Institute of Information Technology Kottayam)</i>; Vengadeswaran Shanmugasundaram <i>(Indian Institute of Information Technology Kottayam)*</i></td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>Enhanced Stock Price Prediction with DES-ED-Bi-GRU Using Smooth Maximum Unit Activation Function</td>
+                <td>Jayanth Talabathula <i>(VIT-AP University)</i>; Manimaran A <i>(VIT-AP UNIVERSITY)*</i></td>
+            </tr>
+            <tr>
+                <td>38</td>
+                <td>Evaluating the Cultural Sensitivity of Large Language Models in Mental Health Support: A Framework Inspired by Ubuntu Values</td>
+                <td>Sontaga Forane <i>(North-West University)</i>; Absalom E Ezugwu <i>(North-West University)*</i>; Kevin Igwe <i>(University of Johannesburg)</i></td>
+            </tr>
+            <tr></tr>
+                <td>52</td>
+                <td>Real-Time Pothole Detection System: A Deep Learning Approach with Single Shot Detector</td>
+                <td>Leelavathy B <i>(Vasavi College of Engineering)*</i>; Krm rao <i>(Vasavi college of engineering)</i>; Khateeb Mohammed  Zahid Parvez <i>(Vasavi college of engineering)</i>; Bathini  Ajay Goud <i>(Vasavi college of engineering)</i></td>
+            </tr>
+            <tr>
+                <td>56</td>
+                <td>Synergizing Topic Modeling and Unified Scoring for Effective Multi-document Summarization</td>
+                <td>Rajendra  Kumar Roul <i>(Thapar Institute of Engineering and Technology)</i>; Navpreet <i>(Thapar institute of engineering and technology)*</i>; Jajtti Sahoo <i>(Bits Pilani Goa)</i></td>
+            </tr>
+            <tr>
+                <td>60</td>
+                <td>Data Analysis with Model Explainability for Air Quality and Pollution Prediction of Urban Areas in Edge Networks</td>
+                <td>Akansha  Singh <i>(IIIT-Lucknow)*</i>; Mainak Adhikari <i>(Indian Institute of Science Education and Research Thriuvanthapuram)</i>; Dr. Soumendu Chakraborty <i>(IIIT Lucknow)</i></td>
+            </tr>
+            <tr>
+                <td>66</td>
+                <td>FedNorm: Optimised Federated Learning Strategy using Hybrid Regularisation Norm</td>
+                <td>Binu  John  <i>(SCMS SCHOOL OF ENGINEERING & TECHNOLOGY KARUKUTTY )*</i>; Varun G Menon <i>(SCMS SCHOOL OR ENGINEERING AND TECHNOLOGY)</i>; Mainak Adhikari  <i>(Indian Institute of Science Education and Research Thriuvanthapuram)</i></td>
+            </tr>
+            <tr>
+                <td>72</td>
+                <td>Explainable Graph Neural Networks to identify potential atoms and chemical bonds of drug candidates from drug target interactions</td>
+                <td>Chandra Mohan Dasari <i>(Indian Institute of Information Technology, Sricity)*</i>; Satansu Mohanty <i>(Indian Institute of Information Technology, Sri City)</i></td>
+            </tr>
+            <tr>
+                <td>90</td>
+                <td>Efficient Self-Supervised Contrastive Learning with Representation Mixing</td>
+                <td>Yash Kumar Sharma <i>(University of Hyderabad)*</i>; Akshay Badola <i>(University of Hyderabad)</i>; Vineet Padmanabhan <i>(University of Hyderabad )</i>; Wilson Naik <i>(University of Hyderabad)</i>; Abdul Sattar <i>(Griffith University)</i></td>
+            </tr>
+            <tr>
+                <td>94</td>
+                <td>Enhancing Cardiovascular Disease Prediction Among Middle-Aged Individuals Using Reinforcement Learning Dynamic Ensemble Selection with Customizable Actions and Exploration-Exploitation Balance</td>
+                <td>Divyasri S R <i>(Hindustan Institute of Technology and Science)*</i>; Rama Prasath A <i>(Hindustan Institute of Technology and Science)</i></td>
+            </tr>
+            <tr>
+                <td>120</td>
+                <td>Smart E-learning Development Tool using Generative AI and Retrieval-Augmented Approach/td>
+                <td>Tilottama Goswami <i>(Vasavi College of Engineering)*</i></td>
+            </tr>
+        </tbody>
+    </table>
+<br><br>
+
+</section>
+</article>
+</body>
+
+</html>

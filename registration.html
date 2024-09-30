@@ -118,6 +118,15 @@
         .table-font {
         font-size: 16px; /* Assuming the default font size is 14px, change accordingly */
     }
+    .register-link {
+            font-size: 20px; /* Make the text bigger */
+            color: #ff5722; /* Bright color (orange-red) */
+            font-weight: bold; /* Make the text bold */
+            text-decoration: none; /* Remove underline */
+        }
+        .register-link:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
   </style>
 </head>
 
@@ -186,8 +195,16 @@
             <a class="dropdown-item" href="camera_ready.html" style="color: white!Important">Camera-Ready instructions</a>
           </div>
         </li>
-        <li class="nav-item nav-list">
-          <a class="nav-link nav-link-tag" href="program_schedule.html" style="color: white!Important">Program Schedule</a>
+        <li class="nav-item nav-list dropdown">
+          <a class="nav-link nav-link-tag dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style="color: white!Important">
+            Program Schedule
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"
+            style=" background-color: maroon!Important; ">
+            <a class="dropdown-item" href="conference_schedule.html" style="color: white!Important">Conference Schedule</a>
+            <a class="dropdown-item" href="accepted_papers.html" style="color: white!Important">Accepted Papers</a>
+          </div>
         </li>
         <li class="nav-item nav-list">
           <a class="nav-link nav-link-tag" href="workshops.html" style="color: white!Important">Workshops</a>
@@ -229,7 +246,8 @@
       BDA 2024 is a physical event with the aim of bringing together the technical community in-person, and giving them the opportunity to network, communicate, share new ideas and learn new insights, ranging from research topics to diversity challenges.  
     </p>
     <p>
-      The registration link will be available soon.
+      To register and pay for the conference, please go through the following link <a href="https://in.eregnow.com/ticketing/bda2024" target="_blank" class="register-link">click here</a>.
+
     </p>
 
     <h2>Registration Pricing</h2>
