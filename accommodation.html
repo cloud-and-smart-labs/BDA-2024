@@ -95,6 +95,56 @@
       right: 45%;
       left: 8%;
     }
+    .register-link {
+            font-size: 15px; /* Make the text bigger */
+            color: #ff5722; /* Bright color (orange-red) */
+            font-weight: bold; /* Make the text bold */
+            text-decoration: none; /* Remove underline */
+        }
+    .register-link:hover {
+          text-decoration: underline; /* Add underline on hover */
+      }
+
+    /* Container for the two images */
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* Space between images */
+    }
+
+    /* Container for each image and its header */
+    .image-container {
+      width: 100%;
+      max-width: 375px; /* Set max width for each image container */
+      text-align: center; /* Center align the text above */
+    }
+
+    /* Header text styling */
+    .image-header {
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px;
+      color: #333;
+      background-color: rgba(0, 0, 0, 0.1); /* Optional background */
+      border-radius: 5px 5px 0 0; /* Rounded corners on top */
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Image styling */
+    .image-container img {
+      width: 100%;
+      height: 200px; /* Set height for uniformity */
+      display: block;
+      object-fit: cover; /* Ensures the image covers the container */
+      border-radius: 0 0 5px 5px; /* Rounded corners on bottom */
+    }
+
+    /* Optional hover effect on header */
+    .image-header:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+      color: #000;
+    }
   </style>
 </head>
 
@@ -179,22 +229,118 @@
 </nav>
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Participation">
-    <meta itemprop="description" content="Participation">
+    <meta itemprop="headline" content="Accommodation">
+    <meta itemprop="description" content="Accommodation">
     <div class="page__inner-wrap">
         <header>
-          <!-- <h1 id="page-title" class="page__title" itemprop="headline">Participation Schedule -->
+          <!-- <h1 id="page-title" class="page__title" itemprop="headline">Accommodation Schedule -->
           <!-- </h1> -->
         </header>
 
 <section class="page__content" itemprop="text">
 
-    <h2>In-campus accommodation is available on FCFS basis</h2>
+    <h2></h2>
+    <!-- <p>We have a limited accommodation (single occupancy - AC rooms) within the University of Hyderabad campus. The rooms are of two categories in which one is  1000/- cost and another is 800/- cost per day. </p>  -->
+    
+    <p>Limited accommodation is available for the registered authors/participants on the campus of University of Hyderabad. Those who require this accommodation may fill <a href="https://docs.google.com/forms/d/e/1FAIpQLSdfB6Ou8PZ_UXyV3SZQcsYw8vg_RncUiKvMZ3JWqcBBl2rQBw/viewform?usp=sf_link" target="_blank" class="register-link">this form</a>. Accommodation is available on FCFS basis and other priority considerations.</p>  
 
-    <p>we have a limited accommodation (single occupancy - AC rooms) within the University of Hyderabad campus. The rooms are of two categories in which one is  1000/- cost and another is 800/- cost per day.</p> 
+    <p>At the time of occupying the room, charges may be paid by the participants at the reception of the guest house. Room charges may vary from INR 700 to INR 1300 for single bed and INR 800 to INR 1400 for double bed based on the venue of accommodation. Proof of identity (Aadhar/PAN/any Govt. issued ID card) needs to be shown on arrival at the guest house.</p>
+     <br>
+    <p>In addition to these options, rooms are also available at discounted price at <b>Hotel At home Suites</b> for BDA 2024 participants. </p>
 
-    <p>Further details will be updated about accommodation soon. </p>
-         
+    <p>Below is a compilation of recommended hotels conveniently located (within a radius of 6-7 kms). If you require further details or wish to make reservations, please feel free to explore the official websites of the respective hotels. </p>
+
+    <div class="image-row">
+      <div class="image-container">
+        <a href="https://ellaahotel.com/" class="image-header" target="_blank">Ellaa Hotel</a>
+        <img src="images/accommodation/ellaa.jpeg" alt="Ellaa Hotel">
+      </div>
+  
+      <div class="image-container">
+        <a href="https://www.radissonhotels.com/en-us/hotels/radisson-hyderabad-hitec-city" class="image-header" target="_blank">Radisson Hotel</a>
+        <img src="images/accommodation/radison.avif" alt="Radisson Hotel">
+      </div>
+    </div>
+
+    <br><br>
+    <div class="image-row">
+
+      <div class="image-container">
+        <a href="https://hotelathomesuites.com/" class="image-header" target="_blank">Hotel At Home Suites</a>
+        <img src="images/accommodation/at-homes.jpg" alt="Hotel At Home Suites">
+      </div>
+
+      <div class="image-container">
+        <a href="https://www.tridenthotels.com/hotels-in-hyderabad/?utm_source=GMBlisting&utm_medium=organic" class="image-header" target="_blank">Trident Hyderabad</a>
+        <img src="images/accommodation/trident.jpg" alt="Trident Hyderabad">
+      </div>
+
+    </div>
+
+    <br><br>
+    <div class="image-row">
+
+      <div class="image-container">
+        <a href="https://hotelsiliconville.com/" class="image-header" target="_blank">Hotel Siliconville</a>
+        <img src="images/accommodation/silicorville.jpeg" alt="Hotel Siliconville">
+      </div>
+
+      <div class="image-container">
+        <a href="https://www.marriott.com/en-us/hotels/hydmd-le-meridien-hyderabad/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0" class="image-header" target="_blank">Le Meridien Hyderabad</a>
+        <img src="images/accommodation/lemaridian.webp" alt="Le Meridien Hyderabad">
+      </div>
+
+    </div>
+    <br><br>
+    <div class="image-row">
+
+      <div class="image-container">
+        <a href="https://www.hyatt.com/en-US/hotel/india/hyatt-hyderabad-gachibowli/hydhy?src=corp_lclb_gmb_seo_hydhy" class="image-header" target="_blank">Hyatt Hyderabad Gachibowli</a>
+        <img src="images/accommodation/hyatt.webp" alt="Hyatt Hyderabad Gachibowli">
+      </div>
+
+      <div class="image-container">
+        <a href="https://www.marriott.com/en-us/hotels/hydsi-sheraton-hyderabad-hotel/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0" class="image-header" target="_blank">Sheraton Hyderabad Hotel</a>
+        <img src="images/accommodation/sheraton.jpeg" alt="Sheraton Hyderabad Hotel">
+      </div>
+
+    </div>
+
+    <br><br>
+    <div class="image-row">
+
+      <div class="image-container">
+        <a href="https://gachibowli.deccanserai.com/" class="image-header" target="_blank">Hotel Deccan Serai Grande</a>
+        <img src="images/accommodation/deccan-serai.webp" alt="Hotel Deccan Serai Grande">
+      </div>
+
+      <div class="image-container">
+        <a href="https://www.marriott.com/en-us/hotels/hydlk-itc-kohenur-a-luxury-collection-hotel-hyderabad/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0" class="image-header" target="_blank">ITC Kohenur</a>
+        <img src="images/accommodation/kohenur.jpg" alt="ITC Kohenur">
+      </div>
+
+    </div>
+
+    <br><br>
+    <div class="image-row">
+
+      <div class="image-container">
+        <a href="https://www.marriott.com/en-us/hotels/hydwi-the-westin-hyderabad-mindspace/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0" class="image-header" target="_blank">The Westin Hyderabad Mindspace</a>
+        <img src="images/accommodation/westin.webp" alt="The Westin Hyderabad Mindspace">
+      </div>
+
+      <div class="image-container">
+        <a href="https://www.lemontreehotels.com/lemon-tree-hotel/hyderabad/gachibowli-hyderabad#prettyPhoto" class="image-header" target="_blank"> Lemon Tree Hotel</a>
+        <img src="images/accommodation/lemon.jpg" alt=" Lemon Tree Hotel">
+      </div>
+
+    </div>
+
+    <br><br>
+    <p>You can also find other hotels around university campus on various websites such as Booking.com, Agoda.com, makemytrip.com, etc.</p>
+    <p>For more information, please write us at <a href= "mailto: bda2024_accomm@uohyd.ac.in">bda2024_accomm@uohyd.ac.in</a>. </p>
+    <br><br>
+    
 
 
     </section>
