@@ -145,6 +145,67 @@
       background-color: rgba(0, 0, 0, 0.2);
       color: #000;
     }
+    .content {
+            background-color: #fff;
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            max-width: 800px;
+            margin: 20px auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0066cc;
+            font-size: 20px;
+            text-align: center;
+            margin: 0 0 10px;
+        }
+        h2 {
+            font-size: 16px;
+            color: #444;
+            margin: 10px 0 5px;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end; /* Aligns items at the bottom */
+            gap: 20px;
+            position: relative;
+        }
+        .flex-item {
+            flex: 1;
+            padding: 0;
+        }
+        .flex-item ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            margin: 2px 0;
+        }
+        p {
+            margin: 5px 0;
+            line-height: 1.4;
+        }
+        .contact-info {
+            font-weight: bold;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        /* Separator styling */
+        .separator {
+            width: 2px; /* Adjust width to make it more visible */
+            background-color: #ddd;
+            height: 60px; /* Set a fixed height for the separator */
+            margin: 0 auto; /* Center the separator */
+        }
   </style>
 </head>
 
@@ -248,12 +309,47 @@
 <section class="page__content" itemprop="text">
 
     <h2></h2>
-    <!-- <p>We have a limited accommodation (single occupancy - AC rooms) within the University of Hyderabad campus. The rooms are of two categories in which one is  1000/- cost and another is 800/- cost per day. </p>  -->
     
     <p>Limited accommodation is available for the registered authors/participants on the campus of University of Hyderabad. Those who require this accommodation may fill <a href="https://docs.google.com/forms/d/e/1FAIpQLSdfB6Ou8PZ_UXyV3SZQcsYw8vg_RncUiKvMZ3JWqcBBl2rQBw/viewform?usp=sf_link" target="_blank" class="register-link">this form</a>. Accommodation is available on FCFS basis and other priority considerations.</p>  
 
-    <p>At the time of occupying the room, charges may be paid by the participants at the reception of the guest house. Room charges may vary from INR 700 to INR 1300 for single bed and INR 800 to INR 1400 for double bed based on the venue of accommodation. Proof of identity (Aadhar/PAN/any Govt. issued ID card) needs to be shown on arrival at the guest house.</p>
+    <p>At the time of occupying the room, charges may be paid by the participants at the reception of the guest house. Room charges may vary from <b>INR 700 to INR 1300</b> for single bed and <b>INR 800 to INR 1400</b> for double bed based on the venue of accommodation. Proof of identity (Aadhar/PAN/any Govt. issued ID card) needs to be shown on arrival at the guest house.</p>
      <br>
+    <p>You can also book rooms at Hotel Ishtara, which is closer to the university campus. Details are as follows:</p>    
+    <div class="content">
+      <h2>Hotel Name: Hotel Isthara, Survey no 165 - 167, NCB Enclave, Gachibowli, Hyderabad</h2>
+
+      <div class="flex-container">
+          <div class="flex-item">
+              <h2>Single Occupancy</h2>
+              <ul>
+                  <li>Deluxe room - 2,200/- per day</li>
+                  <li>Suite - 2,500/- per day</li>
+              </ul>
+          </div>
+
+          <div class="separator"></div>
+
+          <div class="flex-item">
+              <h2>Double Occupancy</h2>
+              <ul>
+                  <li>Deluxe room - 2,400/- per day</li>
+                  <li>Suite - 2,700/- per day</li>
+              </ul>
+          </div>
+      </div>
+
+      <p><strong>Additional Facilities:</strong> Rates include complimentary breakfast, Wi-Fi, and taxes.</p>
+
+      <!-- <p><strong>Eligibility:</strong> Applicable for all official guests invited by the university, including visiting faculty, conference participants, and dignitaries.</p> -->
+
+      <p><strong>Booking Procedure:</strong> Contact Hotel Isthara directly and quote the university's reference on Rate Contract signed dated 10th October 2024.</p>
+
+      <!-- <p><strong>Validity:</strong> Valid from 10th October 2024 to 9th October 2025.</p> -->
+
+      <p><strong>Contact:</strong>  Mr. Azam Faroqui     <strong>Mobile:</strong>  799 799 1000</p>
+      <p>Email: <a href="mailto:azam.faroqui@isthara.com">azam.faroqui@isthara.com</a> & <a href="mailto:reservations@isthara.com">reservations@isthara.com</a></p>
+  </div>
+
     <p>In addition to these options, rooms are also available at discounted price at <a href="https://hotelathomesuites.com/">Hotel At home Suites</a> <b></b> for BDA 2024 participants. </p>
 
     <p>Below is a compilation of recommended hotels conveniently located (within a radius of 6-7 kms). If you require further details or wish to make reservations, please feel free to explore the official websites of the respective hotels. </p>
