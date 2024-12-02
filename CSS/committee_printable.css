@@ -12,11 +12,13 @@
   border: 2px solid #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-left: 20px; /* Adjust the margin to control the distance from the left */
+  margin-right: -80px
 }
 
 /* Style for the names of committee members */
 .author__name {
   margin: 0; /* Reset margin to ensure the names are close to the images */
+  /* margin-left: 400px; */
 }
 
 /* Style for the horizontal line */
